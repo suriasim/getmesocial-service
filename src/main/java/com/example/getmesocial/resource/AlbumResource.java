@@ -12,12 +12,12 @@ public class AlbumResource {
     @Autowired
     private AlbumService albumService;
 
-    @GetMapping("/user")
+    @GetMapping("/album")
     public Album getAlbum() {
         return albumService.getAlbum();
     }
 
-    @PostMapping("/user")
+    @PostMapping("/album")
     public Album saveAlbum(@RequestBody Album album){
         return albumService.saveAlbum(album);
     }
