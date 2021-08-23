@@ -19,6 +19,7 @@ public class AlbumResource {
 
     @PostMapping("/album")
     public Album saveAlbum(@RequestBody Album album){
+
         return albumService.saveAlbum(album);
     }
 
